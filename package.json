@@ -1,0 +1,28 @@
+{
+  "name": "aptisure-realtime-chat",
+  "version": "1.0.0",
+  "description": "Academic Real-Time Chat Application built with MERN Stack and Google Stitch visual truth",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue.bold,magenta.bold\" \"npm run server\" \"npm run client\"",
+    "start": "concurrently -n \"SERVER,CLIENT\" -c \"blue.bold,magenta.bold\" \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build",
+    "test:api": "cd server && node test-api.js"
+  },
+  "keywords": [
+    "mern",
+    "chat-application",
+    "socket.io",
+    "react",
+    "tailwind",
+    "mongodb",
+    "express"
+  ],
+  "author": "Aptisure",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
