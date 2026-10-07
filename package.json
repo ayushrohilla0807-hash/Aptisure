@@ -9,6 +9,7 @@
     "server": "cd server && npm run dev",
     "client": "cd client && npm run dev",
     "build:client": "cd client && npm run build",
+    "deploy:pages": "cd client && npx wrangler pages deploy dist",
     "test:api": "cd server && node test-api.js"
   },
   "keywords": [
